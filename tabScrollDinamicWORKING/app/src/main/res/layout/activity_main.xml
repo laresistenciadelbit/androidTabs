@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/simpleTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:tabBackground="@android:color/darker_gray"
+        app:tabIndicatorColor="#f00"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#f00"
+        app:tabTextColor="#000" />
+
+    <FrameLayout
+        android:id="@+id/simpleFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/simpleTabLayout" />
+
+    <Button
+        android:id="@+id/b_del_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="67dp"
+        android:layout_marginStart="60dp"
+        android:text="del tab" />
+
+    <Button
+        android:id="@+id/b_add_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/b_del_tab"
+        android:layout_marginEnd="94dp"
+        android:text="add tab" />
+
+    <Button
+        android:id="@+id/mod_frag_3_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="197dp"
+        android:text="modify_fragment_3_from_mainactivity" />
+
+    <Button
+        android:id="@+id/mod_tab3_content"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+        android:text="modify_tab3_sleeping_tab" />
+
+</RelativeLayout>
